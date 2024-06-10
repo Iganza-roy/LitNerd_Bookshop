@@ -8,11 +8,48 @@
 }
 
 .books{
+    gap: 10px;
     display: flex;
 }
 
 .book{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.update{
+    border: none;
+    padding: 3px 6px;
+    background-color: rgb(63, 63, 255);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(46, 46, 240, 0.4) 0px 2px, rgba(69, 46, 240, 0.3) 0px 4px, rgba(62, 46, 240, 0.2) 0px 4px, rgba(59, 46, 240, 0.1) 0px 6px, rgba(56, 46, 240, 0.05) 0px 8px;
+    transition: all 0.3s ease;
+}
+
+.update:hover{
+    transform: translateY(-2px);
+    box-shadow: none;
+}
+
+.delete{
+    border: none;
+    padding: 3px 6px;
+    background-color: rgb(255, 63, 63);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 2px, rgba(240, 46, 170, 0.3) 0px 4px, rgba(240, 46, 170, 0.2) 0px 4px, rgba(240, 46, 170, 0.1) 0px 6px, rgba(240, 46, 170, 0.05) 0px 8px;
+    transition: all 0.3s ease;
+}
+
+.delete:hover{
+    transform: translateY(-2px);
+    box-shadow: none;
 }
 
 img {
