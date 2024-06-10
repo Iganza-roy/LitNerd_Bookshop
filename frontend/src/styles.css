@@ -31,6 +31,10 @@
     transition: all 0.3s ease;
 }
 
+.update:active{
+    background-color: rgb(131, 131, 255);
+}
+
 .update:hover{
     transform: translateY(-2px);
     box-shadow: none;
@@ -47,9 +51,18 @@
     transition: all 0.3s ease;
 }
 
+.delete:active{
+    background-color: rgb(255, 163, 163);
+}
+
 .delete:hover{
     transform: translateY(-2px);
     box-shadow: none;
+}
+
+.Add {
+    align-items: center;
+    justify-content: center;
 }
 
 img {
