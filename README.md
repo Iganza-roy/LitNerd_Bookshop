@@ -1,2 +1,2 @@
 # LitNerd_Bookshop
-My first project using React, node js and MySQl
+using react node.js and mysql
