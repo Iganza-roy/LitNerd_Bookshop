@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-color: rgb(255, 233, 233);
 }
 
 h2 {
@@ -138,6 +138,11 @@ img {
     height: 300px;
     object-fit: cover;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: all 0.5s ease;
+}
+
+img:hover {
+    transform: translateY(-7px);
 }
 
 .form-container{
