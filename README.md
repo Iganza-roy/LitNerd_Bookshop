@@ -14,7 +14,7 @@ Lit Nerd Bookshop is a simple React application that demonstrates how a frontend
 - **Database**: MySQL
 
 ## Table of Contents
-1. [Installation](steps)
+1. [Installation](#steps)
 3. Database Setup
 3. Running the Application
 4. Usage
