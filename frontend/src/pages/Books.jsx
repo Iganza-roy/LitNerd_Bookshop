@@ -19,7 +19,7 @@ const Books = () => {
 
     const handleDelete = async (id)=>{
         try{
-            await axios.delete("http://localhost:5500/books"+id)
+            await axios.delete("http://localhost:5500/books/"+id)
             window.location.reload()
         }catch(err){
             console.log(err)
@@ -27,8 +27,10 @@ const Books = () => {
     }
 
     return (
-        <div>
-            <h1>LitNerd Bookshop</h1>
+        <div className='books-container'>
+            <div className='header-title'>
+                <h1>LitNerd Bookshop</h1>
+            </div>
             <div className="books">
                 {books.map(book=>(
                     <div className="book" key={book.id}>
@@ -36,14 +38,18 @@ const Books = () => {
                         <h2>{book.title}</h2>
                         <p>{book.desc}</p>
                         <span>{book.price}</span>
-                        <button className='update'>Update</button>
-                        <button className='delete' onClick={()=>handleDelete(book.id)}>Delete</button>
+                        <div className='update_delete'>
+                            <button className='update'><Link to={`/update/${book.id}`}>Update</Link></button>
+                            <button className='delete' onClick={()=>handleDelete(book.id)}>Delete</button>
+                        </div>
                     </div>
                 ))}
             </div>
-            <button className="Add">
-                <Link to="/add">Add new Book</Link>
-            </button>
+            <div className="Add">
+                <button className='Add_new_btn'>
+                    <Link to="/add">Add new Book</Link>
+                </button>
+            </div>
         </div>
     )
 }
