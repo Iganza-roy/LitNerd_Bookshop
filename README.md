@@ -14,7 +14,7 @@ Lit Nerd Bookshop is a simple React application that demonstrates how a frontend
 - **Database**: MySQL
 
 ## Table of Contents
-1. Installation
+1. [Installation](steps)
 3. Database Setup
 3. Running the Application
 4. Usage
@@ -94,10 +94,10 @@ The backend server will run on http://localhost:5500.
 cd ../frontend
 npm start
 ```
-The frontend server will run on http://localhost:3000
+The frontend server will run on `http://localhost:3000`
 
 ### Usage
- - Open your browser and navigate to http://localhost:3000.(starting the frontend server will automatically open the react app in your browser)
+ - Open your browser and navigate to `http://localhost:3000`. (starting the frontend server will automatically open the react app in your browser)
  - Use the interface to add, view, update, and delete books in the collection.
 
 
