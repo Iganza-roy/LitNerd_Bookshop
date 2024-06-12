@@ -133,7 +133,7 @@ h2 {
 }
 
 
-img {
+.book-cover{
     width: 200px;
     height: 300px;
     object-fit: cover;
@@ -143,6 +143,13 @@ img {
 
 img:hover {
     transform: translateY(-7px);
+}
+
+.logo{
+    border-radius: 50px;
+    padding-top: 20px;
+    height: 23%;
+    border: none;
 }
 
 .form-container{
@@ -158,6 +165,12 @@ img:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+
+.book-desc{
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
 }
 
 input{

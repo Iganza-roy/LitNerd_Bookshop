@@ -28,15 +28,16 @@ const Books = () => {
 
     return (
         <div className='books-container'>
+            <img src="https://static.vecteezy.com/system/resources/previews/006/800/199/non_2x/creative-abstract-book-feather-logo-design-vector.jpg" alt="logo" className='logo'/>
             <div className='header-title'>
                 <h1>LitNerd Bookshop</h1>
             </div>
             <div className="books">
                 {books.map(book=>(
                     <div className="book" key={book.id}>
-                        {book.cover && <img src={book.cover} alt=""/>}
+                        {book.cover && <img src={book.cover} alt="book cover" className='book-cover'/>}
                         <h2>{book.title}</h2>
-                        <p>{book.desc}</p>
+                        <p className='book-desc'>{book.desc}</p>
                         <span>{book.price}</span>
                         <div className='update_delete'>
                             <button className='update'><Link to={`/update/${book.id}`}>Update</Link></button>
