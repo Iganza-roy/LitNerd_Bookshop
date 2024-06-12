@@ -19,9 +19,9 @@ Lit Nerd Bookshop is a simple React application that demonstrates how a frontend
 3. [Running the Application](#running_the_application)
 4. [Usage](#usage)
 5. [Folder Structure](#folder_structure)
-6. [Endpoints](endpoints)
-7. [Contributing](contributing)
-8. [License](liscence)
+6. [Endpoints](#endpoints)
+7. [Contributing](#contributing)
+8. [License](#liscence)
 
 ### Prerequisites
 - Node.js
