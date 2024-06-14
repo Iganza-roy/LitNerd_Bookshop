@@ -60,7 +60,7 @@ const Update = () => {
         <textarea className='update-desc' type="text" placeholder='Description' value={book.desc} onChange={handleChange} name="desc"/>
         <input type="number" placeholder='Price' value={book.price} onChange={handleChange} name="price"/>
         <input type="text" placeholder='Cover' value={book.cover} onChange={handleChange} name="cover"/>
-        <button className="formButton" onClick={handleClick}>Update</button>
+        <button className="formButton" onClick={handleClick}>Update {book.title}</button>
       </div>
     </div>
   )
