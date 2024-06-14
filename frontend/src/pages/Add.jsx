@@ -36,7 +36,7 @@ const Add = () => {
         <textarea className='add-desc' type="text" placeholder='Description' onChange={handleChange} name="desc"/>
         <input type="number" placeholder='Price in Kshs' onChange={handleChange} name="price"/>
         <input type="text" placeholder='Cover' onChange={handleChange} name="cover"/>
-        <button className='add-new' onClick={handleClick}>Add</button>
+        <button className='add-new' onClick={handleClick}>Add to library</button>
       </div>
     </div>
   )
