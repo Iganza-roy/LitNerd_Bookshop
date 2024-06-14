@@ -16,7 +16,7 @@ const Books = () => {
         }
         fetchAllBooks();
     },[])
-
+    
     const handleDelete = async (id)=>{
         try{
             await axios.delete("http://localhost:5500/books/"+id)
@@ -28,7 +28,7 @@ const Books = () => {
 
     return (
         <div className='books-container'>
-            <img src="https://static.vecteezy.com/system/resources/previews/006/800/199/non_2x/creative-abstract-book-feather-logo-design-vector.jpg" alt="logo" className='logo'/>
+            <div className='logo'><img src="https://static.vecteezy.com/system/resources/previews/006/800/199/non_2x/creative-abstract-book-feather-logo-design-vector.jpg" alt="logo"/></div>
             <div className='header-title'>
                 <h1>LitNerd Bookshop</h1>
             </div>
@@ -38,7 +38,7 @@ const Books = () => {
                         {book.cover && <img src={book.cover} alt="book cover" className='book-cover'/>}
                         <h2>{book.title}</h2>
                         <p className='book-desc'>{book.desc}</p>
-                        <span>{book.price}</span>
+                        <span>Price: <strong>Kshs. {book.price}</strong></span>
                         <div className='update_delete'>
                             <button className='update'><Link to={`/update/${book.id}`}>Update</Link></button>
                             <button className='delete' onClick={()=>handleDelete(book.id)}>Delete</button>

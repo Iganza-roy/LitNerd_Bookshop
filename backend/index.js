@@ -6,9 +6,9 @@ const app = express()
 
 const db = mysql.createConnection({
     host: "localhost",
-    user: "root",
-    password: "#majoriganza5830",
-    database:"major"
+    user: "the_user",
+    password: "yourpassword",
+    database:"databasename"
 })
 
 app.use(express.json())
@@ -25,6 +25,16 @@ app.get("/books", (req, res)=>{
         return res.json(data)
     })
 })
+
+app.get("/books/:id", (req, res) => {
+    const bookId = req.params.id;
+    const q = "SELECT * FROM books WHERE id = ?";
+    db.query(q, [bookId], (err, data) => {
+        if (err) return res.status(500).json(err);
+        if (data.length === 0) return res.status(404).json({ message: "Book not found" });
+        return res.json(data[0]);
+    });
+});
 
 app.post("/books", (req, res)=>{
     const q = "INSERT INTO books (`title`,`desc`, `price`, `cover`) VALUES (?)"
@@ -49,7 +59,7 @@ app.delete("/books/:id", (req, res)=>{
         if(err) return res.json(err)
         return res.json("Book has been deleted succesfully!")
     })
-})
+});
 
 app.put("/books/:id", (req, res)=>{
     const bookId = req.params.id
