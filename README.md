@@ -118,6 +118,7 @@ lit-nerd-bookshop/
 │   │   │   ├── Books.jsx
 │   │   │   ├── Add.jsx
 │   │   │   └── Update.jsx
+|   |   |   |-- BookDetails.jsx
 |   |   |-- styles.css
 │   │   ├── App.js
 │   │   ├── index.js
