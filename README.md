@@ -1,5 +1,6 @@
 # LitNerd Bookshop
 
+
 Lit Nerd Bookshop is a simple React application that demonstrates how a frontend can interact with a backend using **CRUD** operations. The backend is implemented using Express/Node.js, and the data is stored in a MySQL database. This project was developed locally and serves as a preparatory exercise for a portfolio project.
 ### Features
 - **Create**: Add new books to the collection.
